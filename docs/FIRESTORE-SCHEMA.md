@@ -5,17 +5,15 @@
 All collections use the typed collection pattern — see `frontend/src/lib/firebase/firestore.ts`.
 Security rules are in `firebase/firestore.rules`.
 
-When adding a new collection, use the `/firebase-collection` Claude Code skill.
-
 ## Schema versioning
 
 Every document in every collection **must** include a `_schemaVersion` field:
 
-```typescript
+\`\`\`typescript
 _schemaVersion: 1  // increment when doing a breaking schema change
-```
+\`\`\`
 
-This enables **lazy migration** — when a document is read, check `_schemaVersion` and migrate on the fly if it's behind current. See the `/evolve-schema` skill for the full migration workflow.
+This enables **lazy migration** — when a document is read, check `_schemaVersion` and migrate on the fly if it's behind current.
 
 **Rules:**
 - `_schemaVersion` is always `1` on creation
@@ -46,4 +44,20 @@ This enables **lazy migration** — when a document is read, check `_schemaVersi
 
 ---
 
-<!-- Add new collection schemas below using the /firebase-collection skill -->
+## `notes` collection
+
+**Path:** `/notes/{noteId}`
+**Access:** Owner-only
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `uid` | `string` | Yes | Owner's Firebase Auth UID |
+| `title` | `string` | Yes | Note title (1–200 chars) |
+| `body` | `string` | Yes | Note body (≤10 000 chars) |
+| `createdAt` | `Timestamp` | Yes | Creation time |
+| `updatedAt` | `Timestamp` | Yes | Last update time |
+| `_schemaVersion` | `1` | Yes | Schema version for lazy migration |
+
+---
+
+<!-- Add new collection schemas below -->
