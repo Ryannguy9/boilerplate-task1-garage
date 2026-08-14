@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { cn, truncate } from '@/lib/utils'
+import { cn, truncate, truncateWords } from '@/lib/utils'
 
 describe('cn', () => {
   it('merges class names', () => {
@@ -26,5 +26,19 @@ describe('truncate', () => {
 
   it('returns full string when exactly at limit', () => {
     expect(truncate('hello', 5)).toBe('hello')
+  })
+})
+
+describe('truncateWords', () => {
+  it('returns string unchanged when under the word limit', () => {
+    expect(truncateWords('one two three', 5)).toBe('one two three')
+  })
+
+  it('truncates and appends ellipsis when over the word limit', () => {
+    expect(truncateWords('one two three four five', 3)).toBe('one two three…')
+  })
+
+  it('returns the full string when exactly at the limit', () => {
+    expect(truncateWords('one two three', 3)).toBe('one two three')
   })
 })
