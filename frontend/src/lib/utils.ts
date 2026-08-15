@@ -26,3 +26,8 @@ export function formatDatetime(date: Date | string): string {
 export function truncate(str: string, length: number): string {
   return str.length > length ? `${str.slice(0, length)}…` : str
 }
+
+export function truncateWords(str: string, maxWords: number): string {
+  const words = str.trim().split(/\s+/)
+  return words.length > maxWords ? `${words.slice(0, maxWords).join(' ')}…` : str
+}
