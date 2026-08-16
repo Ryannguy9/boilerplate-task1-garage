@@ -8,7 +8,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Ryan Nguyen',
     role: 'Project Manager',
     blurb:
-      'Keeps the team aligned, manages priorities, and ensures projects stay on track and deliverables meet expectations.',
+      'Keeps the team aligned, manages priorities, and ensures projects stay on track and deliverables meet expectations. ement sessions or pop-up events where staff can hand them the experience on the phone, which will project to stakeholders such as council’s, planners and the projects own engagement team a tangible way to communicate the design. Because it’s web based with a GPS lobby, the core audience is people at or physically near the Boxhill site with a smartphone.',
   },
   {
     id: 'vincent-dao',
