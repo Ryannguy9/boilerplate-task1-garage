@@ -8,7 +8,7 @@ export const teamMembers: TeamMember[] = [
     name: 'Ryan Nguyen',
     role: 'Project Manager',
     blurb:
-      'Keeps the team aligned, manages priorities, and ensures projects stay on track and deliverables meet expectations. fbfbfbbfbbfbfbfbfbbfbfbfbbfbfbfbfbbfbfbfbbfbfbfbbfbfbbfbfbfbbfbfbfbbfbbbbfbfb',
+      'Keeps the team aligned, manages priorities, and ensures projects stay on track and deliverables meet expectations. ',
   },
   {
     id: 'vincent-dao',
