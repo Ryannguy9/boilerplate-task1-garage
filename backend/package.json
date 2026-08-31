@@ -31,15 +31,15 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
     "@types/express-rate-limit": "^6.0.2",
-    "@types/node": "^26.1.2",
+    "@types/node": "^26.4.0",
     "@types/supertest": "^7.2.1",
-    "@typescript-eslint/eslint-plugin": "^8.66.0",
-    "@typescript-eslint/parser": "^8.66.0",
-    "@vitest/coverage-v8": "^4.1.10",
-    "eslint": "^10.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.68.0",
+    "@typescript-eslint/parser": "^8.68.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.9.1",
     "prettier": "^3.5.3",
     "supertest": "^7.1.0",
     "typescript": "^7.0.2",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   }
 }
