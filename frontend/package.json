@@ -37,17 +37,17 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^10",
-    "eslint-config-next": "16.3.0",
+    "eslint-config-next": "16.3.3",
     "tailwindcss": "^4",
     "typescript": "^7",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "vitest": "^4.1.10",
-    "@vitest/coverage-v8": "^4.1.10",
-    "@testing-library/react": "^16.3.0",
+    "vitest": "^4.1.11",
+    "@vitest/coverage-v8": "^4.1.11",
+    "@testing-library/react": "^16.3.3",
     "@testing-library/jest-dom": "^7.0.0",
-    "@testing-library/user-event": "^14.6.3",
-    "@vitejs/plugin-react": "^6.0.5",
+    "@testing-library/user-event": "^14.6.6",
+    "@vitejs/plugin-react": "^6.1.1",
     "jsdom": "^30.0.1"
   }
 }
